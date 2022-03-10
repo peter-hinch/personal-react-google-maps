@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import * as React from 'react';
 
 /**
  * Copyright 2021 Google LLC
@@ -26,9 +26,9 @@ function Map({
   center: google.maps.LatLngLiteral;
   zoom: number;
 }) {
-  const ref = useRef();
+  const ref = React.useRef();
 
-  useEffect(() => {
+  React.useEffect(() => {
     new window.google.maps.Map(ref.current, {
       center,
       zoom

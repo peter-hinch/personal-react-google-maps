@@ -1,5 +1,5 @@
+import * as React from 'react';
 import { Status, Wrapper } from '@googlemaps/react-wrapper';
-import { ReactElement } from 'react';
 import './App.css';
 import Map from './components/Map';
 
@@ -22,7 +22,7 @@ import Map from './components/Map';
 // This component is based on the example for the package @googlemaps/react-wrapper
 // Reference: https://github.com/googlemaps/react-wrapper/blob/main/examples/basic.tsx
 
-const render = (status: Status): ReactElement => {
+const render = (status: Status): React.ReactElement => {
   if (status === Status.LOADING) return <h3>{status} ..</h3>;
   if (status === Status.FAILURE) return <h3>{status} ...</h3>;
 };
