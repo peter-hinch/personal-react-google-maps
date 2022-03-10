@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Status, Wrapper } from '@googlemaps/react-wrapper';
-import './App.css';
 import Map from './components/Map';
 
 /**
